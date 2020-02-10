@@ -4,11 +4,11 @@ Ruby on Rails project using Dijkstra's algorithm
 ## DB modelization
 ### Models
 - Country :
-- - id, name, cities
+  - id, name, cities
 - City :
-- - id, name, country, roads
+  - id, name, country, roads
 - Road :
-- - id, distance, start, destination
+  - id, distance, start, destination
 
 ### Active Record Associations
 - a country has many cities
