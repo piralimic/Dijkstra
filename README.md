@@ -10,6 +10,9 @@ By creating a new Rails app that you will call Dijkstra, I would like you to:
 - Describe to the user the path (for example: Bruges -> Ghent -> Brussels -> Liège) that corresponds to the shortest distance you returned to the user;
 - Make your code shines!
 
+### Test and code comprehension
+CODE PLAYGROUND : [belgium.rb](https://code.sololearn.com/cIL8G5BYJvyu)
+
 ![Dijkstra DB modelization schema](DBModel75.png "Dijkstra DB modelization schema")
 
 ### Active Record Associations
