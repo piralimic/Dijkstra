@@ -10,4 +10,5 @@ Ruby on Rails project using Dijkstra's algorithm
 - a Road has many Cities (always 2)
 <br>
 When a City is `destroyed` > all depended roads should be `destroyed` too
+<br>
 When a Road is `destroyed` > only the specific road should be `destroyed`
