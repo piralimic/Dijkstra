@@ -26,7 +26,7 @@ By creating a new Rails app that you will call Dijkstra, I would like you to:
 ### Active Record Associations
 - a Country has many Cities
 - a City belongs to a Country
-- a City has many Ways (`from_ways` OR `to_ways`)
+- a City has many Ways
 - a Way belongs to a City (`city_from_id` OR `city_to_id`)
 
 #### Binding Scenario I
