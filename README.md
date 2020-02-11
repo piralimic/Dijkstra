@@ -21,15 +21,16 @@ By creating a new Rails app that you will call Dijkstra, I would like you to:
 - a City has many Roads
 - a Road has many Cities (always 2)
 
-#### Scenario I
-> irreversible action
+#### Binding Scenario I
+> Irreversible action
 
 When a City is `destroyed` > all depended roads should be `destroyed` too
 <br>
+<br>
 When a Road is `destroyed` > only the specific road should be `destroyed`
 
-#### Scenario II
-> safer solution
+#### Binding Scenario II
+> Safer solution
 
 When a City is `destroyed` > all depended roads should be `archived` and no more available but should still be `edited` and `reestablished`
 <br>
