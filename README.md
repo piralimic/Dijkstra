@@ -19,13 +19,13 @@ By creating a new Rails app that you will call Dijkstra, I would like you to:
 ### Test and code comprehension
 > CODE PLAYGROUND : [belgium.rb](https://code.sololearn.com/cIL8G5BYJvyu)
 
-![Dijkstra DB modelization schema](DBModel75v2.png "Dijkstra DB modelization schema")
+![Dijkstra DB modelization schema](DBModelv3.png "Dijkstra DB modelization schema")
 
 ### Active Record Associations
 - a Country has many Cities
 - a City belongs to a Country
-- a City has many Roads
-- a Road has many Cities (always 2)
+- a City has many Ways
+- a Way belongs to a City (city_from OR city_to)
 
 #### Binding Scenario I
 > Irreversible action
