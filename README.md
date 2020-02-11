@@ -11,7 +11,7 @@ By creating a new Rails app that you will call Dijkstra, I would like you to:
 - Make your code shines!
 
 ### Test and code comprehension
-CODE PLAYGROUND : [belgium.rb](https://code.sololearn.com/cIL8G5BYJvyu)
+> CODE PLAYGROUND : [belgium.rb](https://code.sololearn.com/cIL8G5BYJvyu)
 
 ![Dijkstra DB modelization schema](DBModel75.png "Dijkstra DB modelization schema")
 
