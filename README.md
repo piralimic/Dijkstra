@@ -25,7 +25,7 @@ By creating a new Rails app that you will call Dijkstra, I would like you to:
 - a Country has many Cities
 - a City belongs to a Country
 - a City has many Ways
-- a Way belongs to a City (city_from_id OR city_to_id)
+- a Way belongs to a City (`city_from_id` OR `city_to_id`)
 
 #### Binding Scenario I
 > Irreversible action
