@@ -40,6 +40,9 @@ When a Road is `destroyed` > only the specific road should be `archived` and no 
 ## Algorithm explanation
 ### The shortest distance between Bruges and Liege
 #### Step 0 : no city visited
+Initialize the distance as infinite from start city.
+<br>
+Visited =[] unvisited=[bruges,ghent,antwerp,tournai,mechelen,brussels,mons,namur,liege,arlon]
 ![Shortest distance from Bruges](algo/graph0.png "Shortest distance from Bruges")
 ![Shortest distance values](algo/step0.png "Shortest distance from values")
 #### Step 1 : neighbours of Bruges
@@ -63,3 +66,8 @@ When a Road is `destroyed` > only the specific road should be `archived` and no 
 #### Step 7 : neighbours of Liege
 ![Shortest distance from Bruges](algo/graph7.png "Shortest distance from Bruges")
 ![Shortest distance values](algo/step7.png "Shortest distance from values")
+### Conclusion
+- For every request, each city is visited.
+- Each distance is `saved`.
+- Every distance is compared to each other.
+- Only the shortest distance between each city is `saved`
