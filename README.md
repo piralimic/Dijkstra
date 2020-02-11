@@ -1,6 +1,10 @@
 # Dijkstra
 Ruby on Rails project using Dijkstra's algorithm
 
+## Mockup
+![Dijkstra Mockup welcome page](moq0.png "Dijkstra Mockup welcome page")
+![Dijkstra Mockup country page](moq1.png "Dijkstra Mockup country page")
+
 ## Specifications
 By creating a new Rails app that you will call Dijkstra, I would like you to:
 - Find a DB modelization that allows you to store any country given its cities and its roads between them (see Belgian graph);
