@@ -2,16 +2,14 @@
 Ruby on Rails project using Dijkstra's algorithm
 
 ## DB modelization
-### Models
-- Country :
-  - id, name, cities
-- City :
-  - id, name, country, roads
-- Road :
-  - id, distance, start, destination
+![Dijkstra DB modelization schema](DBModel.png "Dijkstra DB modelization schema")
+
 
 ### Active Record Associations
-- a country has many cities
-- a city belongs to a country
-- a city has many roads
-- a road belongs to a city (start OR destination)
+- a Country has many Cities
+- a City belongs to a Country
+- a City has many Roads
+- a Road has many Cities (always 2)
+<br>
+When a City is `destroyed` > all depended roads should be `destroyed` too
+When a Road is `destroyed` > only the specific road should be `destroyed`
