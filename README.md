@@ -1,7 +1,7 @@
 # Dijkstra
 Ruby on Rails project using Dijkstra's algorithm
 
-![Dijkstra DB modelization schema](DBModel.png "Dijkstra DB modelization schema" width="75%")
+<img src="DBModel.png" width="48" alt="Dijkstra DB modelization schema" title="Dijkstra DB modelization schema" width="75%">
 
 ### Active Record Associations
 - a Country has many Cities
