@@ -3,9 +3,11 @@ Ruby on Rails project using Dijkstra's algorithm
 
 ## Mockup
 ### Welcome Page
-![Dijkstra Mockup welcome page](moq01.png "Dijkstra Mockup welcome page")
+![Dijkstra Mockup welcome page](moq001.png "Dijkstra Mockup welcome page")
 ### Selected Country Page
-![Dijkstra Mockup country page](moq02.png "Dijkstra Mockup country page")
+![Dijkstra Mockup country page](moq002.png "Dijkstra Mockup country page")
+### Algorithm Response
+![Dijkstra Mockup result page](moq003.png "Dijkstra Mockup result page")
 
 ## Specifications
 By creating a new Rails app that you will call Dijkstra, I would like you to:
