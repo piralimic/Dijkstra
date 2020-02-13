@@ -1,5 +1,5 @@
 # Dijkstra
-Ruby on Rails project using [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and [Bulma](https://bulma.io/) open source CSS framework 
+Ruby on Rails project using [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and [Bulma](https://bulma.io/) open source CSS framework
 
 ## Mockup
 ### Welcome Page
@@ -151,3 +151,5 @@ unvisited = [:namur,:arlon]
 - Only the shortest distance is `saved`
 - For each visited city, the previous city with the shortest distance is `saved`
 - The shortest path regroups all the *previous* cities between *destination* and *source*
+
+[Online Demo](https://dijkstra-piralimic.herokuapp.com/) on Heroku
