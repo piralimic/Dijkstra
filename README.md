@@ -1,13 +1,15 @@
 # Dijkstra
-Ruby on Rails project using Dijkstra's algorithm
+Ruby on Rails project using [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and [Bulma](https://bulma.io/) open source CSS framework 
 
 ## Mockup
 ### Welcome Page
-![Dijkstra Mockup welcome page](moq001.png "Dijkstra Mockup welcome page")
+![Dijkstra Mockup welcome page](bulmamoq1.png "Dijkstra Mockup welcome page")
 ### Selected Country Page
-![Dijkstra Mockup country page](moq002.png "Dijkstra Mockup country page")
+![Dijkstra Mockup country page](bulmamoq2.png "Dijkstra Mockup welcome page")
 ### Algorithm Response
-![Dijkstra Mockup result page](moq003.png "Dijkstra Mockup result page")
+![Dijkstra Mockup request page](bulmamoq3.png "Dijkstra Mockup welcome page")
+### Table of values
+![Dijkstra Mockup result page](bulmamoq4.png "Dijkstra Mockup welcome page")
 
 ## Specifications
 By creating a new Rails app that you will call Dijkstra, I would like you to:
@@ -148,4 +150,4 @@ unvisited = [:namur,:arlon]
 - Every distances are compared to each other.
 - Only the shortest distance is `saved`
 - For each visited city, the previous city with the shortest distance is `saved`
-- The shortest path regroups all the *previous* cities between *destination* and *source* 
+- The shortest path regroups all the *previous* cities between *destination* and *source*
