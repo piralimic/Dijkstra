@@ -152,4 +152,4 @@ unvisited = [:namur,:arlon]
 - For each visited city, the previous city with the shortest distance is `saved`
 - The shortest path regroups all the *previous* cities between *destination* and *source*
 
-[Online Demo](https://dijkstra-piralimic.herokuapp.com/) on Heroku
+> [Live Demo](https://dijkstra-piralimic.herokuapp.com/) on Heroku
