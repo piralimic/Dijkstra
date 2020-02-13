@@ -45,58 +45,106 @@ When a City is `destroyed` > all depended roads should be `archived` and no more
 <br>
 When a Road is `destroyed` > only the specific road should be `archived` and no more available but should still be `edited` and `reestablished`
 <br>
+
 ## Algorithm explanation
+
 ### The shortest distance between Bruges and Liege
-#### First Step : no city visited
-Initialize the distance as infinite from start city.
+
+#### First Step
+Initialize the distance as infinite from *source* city.
 <br>
-Visited =[] unvisited=[bruges,ghent,antwerp,tournai,mechelen,brussels,mons,namur,liege,arlon]
-![Shortest distance from Bruges](algo/graph0.png "Shortest distance from Bruges")
-![Shortest distance values](algo/step0.png "Shortest distance from values")
-#### Next Step : neighbours of Bruges
-Only one path, the shortest distance is `saved`.
+```Ruby
+visited = []
+unvisited = [:bruges,:ghent,:antwerp,:tournai,:mechelen,:brussels,:mons,:namur,:liege,:arlon]
+```
+![Shortest distance from Bruges](algo/graph00.png "Shortest distance from Bruges")
+![Shortest distance values](algo/step00.png "Shortest distance from values")
+
+#### Next Step : neighbors of Bruges
+Only one neighbor, the distance is by default `saved` as the shortest distance.
 <br>
-Visited =[bruges] unvisited=[ghent,antwerp,tournai,mechelen,brussels,mons,namur,liege,arlon]
-![Shortest distance from Bruges](algo/graph1.png "Shortest distance from Bruges")
-![Shortest distance values](algo/step1.png "Shortest distance from values")
-#### Next Step : neighbours of Ghent
+```Ruby
+visited = [:bruges]
+unvisited = [:ghent,:antwerp,:tournai,:mechelen,:brussels,:mons,:namur,:liege,:arlon]
+```
+![Shortest distance from Bruges](algo/graph01.png "Shortest distance from Bruges")
+![Shortest distance values](algo/step01.png "Shortest distance from values")
+
+#### Next Step : neighbors of Ghent
 Multiple paths, no previous distances to compare, all distances are `saved`.
 <br>
-Visited =[bruges,ghent] unvisited=[antwerp,tournai,mechelen,brussels,mons,namur,liege,arlon]
-![Shortest distance from Bruges](algo/graph2.png "Shortest distance from Bruges")
-![Shortest distance values](algo/step2.png "Shortest distance from values")
-#### Next Step : neighbours of Brussels
+```Ruby
+visited = [:bruges,:ghent]
+unvisited = [:antwerp,:tournai,:mechelen,:brussels,:mons,:namur,:liege,:arlon]
+```
+![Shortest distance from Bruges](algo/graph02.png "Shortest distance from Bruges")
+![Shortest distance values](algo/step02.png "Shortest distance from values")
+
+#### Next Step : neighbors of Brussels
 Multiple paths, previous distances are compared, only shortest distances are `saved`.
 <br>
-Visited =[bruges,ghent,brussels] unvisited=[antwerp,tournai,mechelen,mons,namur,liege,arlon]
-![Shortest distance from Bruges](algo/graph3.png "Shortest distance from Bruges")
-![Shortest distance values](algo/step3.png "Shortest distance from values")
-#### Next Step : neighbours of Tournai
+```Ruby
+visited = [:bruges,:ghent,:brussels]
+unvisited = [:antwerp,:tournai,:mechelen,:mons,:namur,:liege,:arlon]
+```
+![Shortest distance from Bruges](algo/graph03.png "Shortest distance from Bruges")
+![Shortest distance values](algo/step03.png "Shortest distance from values")
+
+#### Next Step : neighbors of Antwerp
 Multiple paths, previous distances are compared, only shortest distances are `saved`.
 <br>
-Visited =[bruges,ghent,brussels,tournai] unvisited=[antwerp,mechelen,mons,namur,liege,arlon]
-![Shortest distance from Bruges](algo/graph4.png "Shortest distance from Bruges")
-![Shortest distance values](algo/step4.png "Shortest distance from values")
-#### Next Step : neighbours of Mons
+```Ruby
+visited = [:bruges,:ghent,:brussels,:antwerp]
+unvisited = [:tournai,:mechelen,:mons,:namur,:liege,:arlon]
+```
+![Shortest distance from Bruges](algo/graph04.png "Shortest distance from Bruges")
+![Shortest distance values](algo/step04.png "Shortest distance from values")
+
+#### Next Step : neighbors of Tournai
 Multiple paths, previous distances are compared, only shortest distances are `saved`.
 <br>
-Visited =[bruges,ghent,brussels,tournai,mons] unvisited=[antwerp,mechelen,namur,liege,arlon]
-![Shortest distance from Bruges](algo/graph5.png "Shortest distance from Bruges")
-![Shortest distance values](algo/step5.png "Shortest distance from values")
-#### Next Step : neighbours of Namur
+```Ruby
+visited = [:bruges,:ghent,:brussels,:antwerp,:tournai]
+unvisited = [:mechelen,:mons,:namur,:liege,:arlon]
+```
+![Shortest distance from Bruges](algo/graph05.png "Shortest distance from Bruges")
+![Shortest distance values](algo/step05.png "Shortest distance from values")
+
+#### Next Step : neighbors of Mechelen
 Multiple paths, previous distances are compared, only shortest distances are `saved`.
 <br>
-Visited =[bruges,ghent,brussels,tournai,mons,namur] unvisited=[antwerp,mechelen,liege,arlon]
-![Shortest distance from Bruges](algo/graph6.png "Shortest distance from Bruges")
-![Shortest distance values](algo/step6.png "Shortest distance from values")
-#### Last Step : neighbours of Liege
+```Ruby
+visited = [:bruges,:ghent,:brussels,:antwerp,:tournai,:mechelen]
+unvisited = [:mons,:namur,:liege,:arlon]
+```
+![Shortest distance from Bruges](algo/graph06.png "Shortest distance from Bruges")
+![Shortest distance values](algo/step06.png "Shortest distance from values")
+
+#### Next Step : neighbors of Mons
 Multiple paths, previous distances are compared, only shortest distances are `saved`.
 <br>
-Visited =[bruges,ghent,brussels,tournai,mons,namur,antwerp,mechelen,arlon,liege] unvisited=[]
-![Shortest distance from Bruges](algo/graph7.png "Shortest distance from Bruges")
-![Shortest distance values](algo/step7.png "Shortest distance from values")
+```Ruby
+visited = [:bruges,:ghent,:brussels,:antwerp,:tournai,:mechelen,:mons]
+unvisited = [:namur,:liege,:arlon]
+```
+![Shortest distance from Bruges](algo/graph07.png "Shortest distance from Bruges")
+![Shortest distance values](algo/step07.png "Shortest distance from values")
+
+#### Last Step : neighbors of Liege
+Multiple paths, previous distances are compared, only shortest distances are `saved`.
+<br>
+```Ruby
+visited = [:bruges,:ghent,:brussels,:antwerp,:tournai,:mechelen,:mons,:liege]
+unvisited = [:namur,:arlon]
+```
+![Shortest distance from Bruges](algo/graph08.png "Shortest distance from Bruges")
+![Shortest distance values](algo/step08.png "Shortest distance from values")
+
 ### Conclusion
-- For every request, each city is visited.
-- Each distance is `saved`.
-- Every distance is compared to each other.
-- Only the shortest distance between each city is `saved`
+- For every request, each city with the shortest distance is visited.
+- Starting from the *source* city to the *destination* city
+- When a city is visited, all its direct neighbors will be visited (in order of ascending distances)
+- Each distance is `checked`.
+- Every distances are compared to each other.
+- Only the shortest distance is `saved`
+- For each visited city, the previous city with the shortest distance is `saved`
