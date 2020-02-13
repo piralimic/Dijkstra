@@ -148,3 +148,4 @@ unvisited = [:namur,:arlon]
 - Every distances are compared to each other.
 - Only the shortest distance is `saved`
 - For each visited city, the previous city with the shortest distance is `saved`
+- The shortest path regroups all the *previous* cities between *destination* and *source* 
