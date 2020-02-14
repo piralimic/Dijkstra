@@ -18,7 +18,7 @@ The Ruby on Rails 6 project where I had fun :
 ### Table of values
 ![Dijkstra Mockup result page](bulmamoq4.png "Dijkstra Mockup welcome page")
 
-## Specifications
+## Instructions
 By creating a new Rails app that you will call Dijkstra, I would like you to:
 - Find a DB modelization that allows you to store any country given its cities and its roads between them (see Belgian graph);
 - Store the Belgian data (see [belgium.rb](belgium.rb));
