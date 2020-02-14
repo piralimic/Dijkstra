@@ -148,7 +148,7 @@ unvisited = [:namur,:arlon]
 ![Shortest distance from Bruges](algo/graph08.png "Shortest distance from Bruges")
 ![Shortest distance values](algo/step08.png "Shortest distance from values")
 
-### Conclusion
+## Conclusion
 - For every request, each city with the shortest distance is visited.
 - Starting from the *source* city to the *destination* city
 - When a city is visited, all its direct neighbors will be visited (in order of ascending distances)
@@ -160,7 +160,7 @@ unvisited = [:namur,:arlon]
 
 <br>
 
-### Stop rails server from the command line
+## Stop rails server from the command line
 Ref. [codementor](https://www.codementor.io/tips/2171438772/stop-rails-server-from-the-command-line)
 
 Sometimes, you get an error while trying to run your rails server saying that, the server is already running and you are not sure where and how the server is running and how to stop that rails server so that you can run the server for the current project. You tried closing the terminal and also tried pressing Ctrl+c but no luck!
