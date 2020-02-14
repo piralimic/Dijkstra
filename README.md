@@ -1,10 +1,13 @@
 # Dijkstra
 Ruby on Rails 6 project using [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and [Bulma](https://bulma.io/) open source CSS framework
+<br><br>
 [How To Deploy on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails6)
+
+
+## Mockup
 
 > Project's [live demo](https://dijkstra-piralimic.herokuapp.com/) on Heroku
 
-## Mockup
 ### Welcome Page
 ![Dijkstra Mockup welcome page](bulmamoq1.png "Dijkstra Mockup welcome page")
 ### Selected Country Page
@@ -154,7 +157,7 @@ unvisited = [:namur,:arlon]
 - Only the shortest distance is `saved`
 - For each visited city, the previous city with the shortest distance is `saved`
 - The shortest path regroups all the *previous* cities between *destination* and *source*
-
+<br>
 ### Stop rails server from the command line
 Ref. [codementor](https://www.codementor.io/tips/2171438772/stop-rails-server-from-the-command-line)
 
