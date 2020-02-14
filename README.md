@@ -1,8 +1,9 @@
 # Dijkstra
-Ruby on Rails 6 project using [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and [Bulma](https://bulma.io/) open source CSS framework
-<br><br>
-[How To Deploy on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails6)
-
+The Ruby on Rails 6 project where I had fun :
+- using [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+- testing [Bulma](https://bulma.io/) open source CSS framework
+- discovering how to easily [deploy on Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails6)
+- analyzing  Jithin's [graph.rb](https://gist.github.com/jithinabraham/63d34bdf1c94a01d6e91864d4dc583f4)
 
 ## Mockup
 
