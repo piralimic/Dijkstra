@@ -157,7 +157,9 @@ unvisited = [:namur,:arlon]
 - Only the shortest distance is `saved`
 - For each visited city, the previous city with the shortest distance is `saved`
 - The shortest path regroups all the *previous* cities between *destination* and *source*
+
 <br>
+
 ### Stop rails server from the command line
 Ref. [codementor](https://www.codementor.io/tips/2171438772/stop-rails-server-from-the-command-line)
 
