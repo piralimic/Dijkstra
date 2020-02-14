@@ -1,0 +1,9 @@
+<p>Welcome to Dijkstra's web application, to find the shortest distance between two cities, please select a country from the list below.</p>
+<hr>
+<% @countries.each do |country| %>
+<div class="columns">
+  <div class="column">
+    <%= link_to country.name, country_path(country), class: 'button is-link' %>
+  </div>
+</div>
+<% end %>

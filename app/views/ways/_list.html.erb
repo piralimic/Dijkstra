@@ -1,0 +1,20 @@
+<table class="table is-hoverable">
+    <tr>
+      <th width="100px" align="left">From</th>
+      <th width="100px" align="left">To</th>
+      <th width="20px" align="left">Distance</th>
+    </tr>
+    <%
+      @ways.each do |way|
+            from = @cities.find(way.city_from_id).name
+            to = @cities.find(way.city_to_id).name
+            %>
+              <tr <% if @msg[0].include?(from) and @msg[0].include?(to) %>class="is-selected"<% end %>>
+                <td><%= from %></td>
+                <td><%= to %></td>
+                <td align="right"><%= way.distance %> km</td>
+              </tr>
+            <%
+      end
+    %>
+</table>

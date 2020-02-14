@@ -1,0 +1,8 @@
+<p class="subtitle is-uppercase is-italic"><%= @country.name %></p>
+<p>The shortest distance between <%= @start_city_name %> and <%= @end_city_name %> is <b><%= @msg[1] %> km</b></p>
+<p>Path : <span class="is-family-monospace"><%= @msg[0] %></span></p>
+<hr>
+<p><%= link_to 'Perform new request', :back, class: 'button is-link is-light' %></p>
+<hr>
+<p class="subtitle">Table of values</p>
+<%= render 'ways/list' %>

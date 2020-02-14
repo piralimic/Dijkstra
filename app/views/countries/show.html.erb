@@ -1,0 +1,47 @@
+<h2 class="subtitle is-uppercase is-italic"><%= @country.name %></h2>
+
+<%= form_tag(countries_result_path, method: "post") do |f| %>
+<%= hidden_field_tag 'country_id', @country.id %>
+<div class="columns">
+  <div class="column">
+    <div>
+      From :
+    </div>
+    <div>
+      <div class="control has-icons-left">
+        <div class="select">
+          <%= select_tag 'city_from', options_for_select(@country.cities.collect{ |u| [u.name, u.id] }) %>
+        </div>
+        <span class="icon is-left">
+          <i class="fas fa-globe"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div>
+      To :
+    </div>
+    <div>
+      <div class="control has-icons-left">
+        <div class="select">
+          <%= select_tag 'city_to', options_for_select(@country.cities.collect{ |u| [u.name, u.id] }) %>
+        </div>
+        <span class="icon is-left">
+          <i class="fas fa-globe"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div>
+      &nbsp;
+    </div>
+    <div>
+      <%= submit_tag 'Execute', class: 'button is-link' %>
+    </div>
+  </div>
+</div>
+<% end %>
+<hr>
+<p><%= link_to 'Choose another country', root_path, class: 'button is-link is-light' %></p>
