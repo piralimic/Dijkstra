@@ -181,4 +181,4 @@ $ kill -9 PID
 <br>
 
 ## Next feature
-Add an interactive Graph using JointJS like [netvlies.nl](https://www.netvlies.nl/tips-updates/applicaties/cases/creating-an-interactive-svg-metro-map-with-jointjs/)
+Add an interactive Graph using JointJS like [netvlies.nl](https://www.netvlies.nl/tips-updates/applicaties/cases/creating-an-interactive-svg-metro-map-with-jointjs/) qnd/or using [RGL](https://github.com/monora/rgl)
